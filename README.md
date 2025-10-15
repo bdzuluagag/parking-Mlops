@@ -1,5 +1,3 @@
----
-
 # 🅿️ Predicción de Ocupación de Parqueaderos con GCP y Vertex AI
 
 **Autores:**
@@ -10,8 +8,6 @@
 **Curso:** ST1630 - Reto 4 / Proyecto Final
 **Institución:** Universidad EAFIT
 **Año:** 2025
-
----
 
 ## 📘 Descripción del Caso
 
