@@ -212,5 +212,11 @@ Ejecutar los SQL ubicados en la carpeta `sql/`.
 
 Proyecto académico — Universidad EAFIT (2025).
 Uso educativo y demostrativo.
+---
+
+### 🤝 Declaración de trabajo colaborativo
+
+Ambos integrantes del equipo, **Brayan David Zuluaga Giraldo** y **Sofía Mendieta Marín**, participaron de manera conjunta, equitativa y activa en **todas las etapas del desarrollo del proyecto**, incluyendo el diseño arquitectónico, la implementación técnica, la documentación y la validación del modelo en Vertex AI.  
+El trabajo fue realizado en su totalidad de forma colaborativa y mutua, garantizando la comprensión y aporte de ambos miembros en cada componente del proyecto.
 
 ---
