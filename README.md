@@ -118,7 +118,20 @@ LEAD(available_spots, 10) OVER (PARTITION BY parking_id ORDER BY timestamp)
 * **Modelo:** Regresión
 * **Target:** `target_t_plus_10`
 * **Features:** `current_value`, `lag_1`, `ma_5`, `parking_id`
-* **Evaluación:** RMSE ≈ 3.9, MAE ≈ 2.1
+
+* **Evaluación:**:
+| Métrica                                   | Valor | Interpretación                                                                         |
+| ----------------------------------------- | ----- | -------------------------------------------------------------------------------------- |
+| **MAE (Mean Absolute Error)**             | 2.395 | En promedio, el modelo se equivoca en ±2,4 cupos disponibles.                          |
+| **MAPE (Mean Absolute Percentage Error)** | 2.666 | El error relativo es aproximadamente del 2,6% respecto al valor real.                  |
+| **R² (Coeficiente de determinación)**     | 0.962 | El modelo explica el 96,2% de la variabilidad total del número de cupos.               |
+| **RMSE (Root Mean Squared Error)**        | 2.967 | Promedio del error cuadrático, penaliza más los errores grandes.                       |
+| **RMSLE (Root Mean Squared Log Error)**   | 0.032 | Error relativo logarítmico bajo, útil para evitar penalizar predicciones subestimadas. |
+
+Los resultados muestran que el modelo tiene altísima capacidad predictiva (R² ≈ 0.96) y un error promedio bajo (MAE ≈ 2.4), lo cual lo convierte en una herramienta confiable para estimar la ocupación futura de los parqueaderos simulados.
+
+En términos prácticos, significa que:
+> "Si en un parqueadero hay 100 cupos, el modelo predice con una desviación media de ±2 a 3 cupos del valor real proyectado."
 
 ### e) Despliegue y visualización
 
